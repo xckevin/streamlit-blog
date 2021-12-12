@@ -11,10 +11,10 @@ def readFile(x):
         d = f.read()
         return d    
 
-st.sidebar.header('文章列表')
+st.sidebar.header('List')
 file = st.sidebar.selectbox('', getAllFiles())
 
 if file:
     st.markdown(readFile(os.path.join(dir, file)))
 else:
-    st.write("Hi bro")
+    st.write("Hi bro, this is my blog")
